@@ -9,7 +9,7 @@ public class Uppercase {
         for (int i = 1; i < str.length(); i++) {
             // If space found, capitalize next character
             if (str.charAt(i) == ' ' && i < str.length() - 1) {
-                sb.append(str.charAt(i)); // append space
+                sb.append(str.charAt(i));
                 i++;
                 sb.append(Character.toUpperCase(str.charAt(i)));
             } else {
