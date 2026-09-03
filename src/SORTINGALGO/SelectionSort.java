@@ -1,17 +1,33 @@
 public class SelectionSort {
+    // public static void selection(int arr[]){
+    //     for(int i=0; i<arr.length-1; i++){
+    //         int minPos = i;
+
+    //     for(int j=i+1; j<arr.length; j++){
+    //         if(arr[minPos] > arr[j]){
+    //             minPos = j;
+    //         }
+    //     }
+    //     // swap 
+    //     int temp = arr[minPos];
+    //     arr[minPos] = arr[i];
+    //     arr[i] = temp;
+    //     }
+    // }
+
     public static void selection(int arr[]){
         for(int i=0; i<arr.length-1; i++){
-            int minPos = i;
+            int minp = i;
 
-        for(int j=i+1; j<arr.length; j++){
-            if(arr[minPos] > arr[j]){
-                minPos = j;
+            for(int j=i+1; j<arr.length; j++){
+                if(arr[minp] > arr[j]){
+                    minp = j;
+                }
             }
-        }
-        // swap 
-        int temp = arr[minPos];
-        arr[minPos] = arr[i];
-        arr[i] = temp;
+
+            int temp = arr[minp];
+            arr[minp] = arr[i];
+            arr[i] = temp;
         }
     }
 
